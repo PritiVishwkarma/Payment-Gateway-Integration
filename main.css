@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.navbar-nav{
+    margin-left: auto; 
+  }
+.navbar-nav.text-uppercase.ml-auto li a {
+    color: blue;
+}
+.logo{
+    color: blue;
+}
+body{
+    font-family: 'Balsamiq Sans', cursive;
+}
+.navbar-custom{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/*================end of Nav==============*/
+
+/*===============front-page===========*/
+.bg-image{
+    background-image: url("images/front_image3.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+.container-fluid{
+    padding-top: 1rem;
+    text-align: center;
+    background: white;
+    color: rgb(3, 83, 151);
+}
+/*===========End of front-page========*/
+
+/*===========About us page=========*/
+.about{
+    padding-top: 15rem;
+    padding-right: 55rem; 
+    padding-left: 6rem;
+    text-align: left;
+    color: rgb(3, 83, 151);
+    background-image: url("images/girl_image.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.about-container-fluid{
+    padding-top: 4rem;
+    text-align: center;
+    background:white;
+    color:rgb(3, 83, 151);
+    padding-right: 14rem;
+    padding-left: 14rem;
+} 
+.heading{
+    text-align: center;
+    color: rgb(3, 83, 151);
+    padding-top: 5rem
+}
+.container-image{ 
+    text-align: center;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    color: rgb(3, 83, 151);
+}
+/*==========End of about us page========*/
+
+/*==========Contact us page========*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("images/boy_image.jpg");
+    background-size: cover;
+}
+.contact.content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact.content h2{
+    font-size: 45px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact.content p{
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color:rgb(3, 83, 151);
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color:rgb(3, 83, 151);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: rgb(3, 83, 151);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+} 
+
+@media (max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+/*=========End of contact us page======*/
+.pay-button{
+    background-color: white;
+    border: 2px solid black;
+    color: green;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+/*=======Donation page=======*/
+.donate_page{ 
+    text-align: center;
+    padding-top: 20rem;
+    color:rgb(3, 83, 151);
+    background-image: url("images/smily_boy.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.donate_page form{
+    padding:5rem;
+}
+/*==========End of donation page=======*/
+
+/*==========Footer section=======*/
+.footer{
+    padding: 40px 0;
+    background-color: rgb(3, 83, 151);
+} 
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.footer .social a:hover {
+    opacity: 0.9;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+/*========End of footer section======*/
